@@ -1,0 +1,111 @@
+﻿
+  LAPORAN: KENAPA LAPTOP MATI MENDADAK
+  dibuat 8/14/2026 4:25:40 AM | melihat 30 hari ke belakang
+
+  CATATAN: script ini gak jalan sebagai Administrator.
+  Sebagian log mungkin gak kebaca. Kalau hasilnya kosong, klik kanan
+  KLIK_CEK_MATI.bat -> Run as administrator.
+
+==========================================================================
+  1. KEJADIAN MATI / RESTART (yang paling penting)
+==========================================================================
+   Kernel-Power 41 (mati tanpa shutdown normal) : 19 kali
+   BugCheck 1001   (layar biru / BSOD)          : 0 kali
+   EventLog 6008   (shutdown tak terduga)       : 19 kali
+   User32 1074     (restart TERJADWAL - normal) : 29 kali
+
+   RINCIAN Kernel-Power 41 (10 terakhir):
+     2026-08-14 04:02:01  -> ADA LAYAR BIRU (bugcheck 0x10E)
+     2026-08-06 00:37:16  -> LISTRIK PUTUS / HARDWARE / PANAS (tanpa layar biru)
+     2026-08-05 12:21:18  -> ADA LAYAR BIRU (bugcheck 0x13A)
+     2026-08-05 11:05:25  -> ADA LAYAR BIRU (bugcheck 0x13A)
+     2026-08-04 21:33:09  -> LISTRIK PUTUS / HARDWARE / PANAS (tanpa layar biru)
+     2026-08-04 15:15:54  -> LISTRIK PUTUS / HARDWARE / PANAS (tanpa layar biru)
+     2026-08-03 15:06:23  -> LISTRIK PUTUS / HARDWARE / PANAS (tanpa layar biru)
+     2026-08-02 04:53:22  -> ADA LAYAR BIRU (bugcheck 0x13A)
+     2026-08-02 03:27:18  -> ADA LAYAR BIRU (bugcheck 0x50)
+     2026-08-02 01:16:55  -> ADA LAYAR BIRU (bugcheck 0x13A)
+
+   RESTART TERJADWAL (siapa yang minta):
+     2026-08-13 01:47  The process C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceH
+     2026-08-13 01:44  The process C:\Windows\system32\winlogon.exe (LAPTOP-OU449BND) has initiated the shutdown of computer LAPTOP-O
+     2026-08-13 01:43  The process C:\Windows\servicing\TrustedInstaller.exe (LAPTOP-OU449BND) has initiated the restart of computer 
+     2026-08-13 01:42  The process C:\Windows\servicing\TrustedInstaller.exe (LAPTOP-OU449BND) has initiated the restart of computer 
+     2026-08-06 00:38  The process C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceH
+     2026-08-05 03:54  The process C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceH
+     2026-08-04 17:10  The process C:\Windows\system32\winlogon.exe (LAPTOP-OU449BND) has initiated the restart of computer LAPTOP-OU
+     2026-08-04 11:39  The process C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceH
+
+==========================================================================
+  2. ERROR HARDWARE (WHEA) - kalau ada, ini penyebab paling serius
+==========================================================================
+   WHEA-Logger : 0 kejadian
+   Bersih - gak ada error hardware kecatat.
+
+==========================================================================
+  3. PANAS / CPU DIPAKSA PELAN
+==========================================================================
+   CPU di-throttle karena panas : 0 kejadian
+   Kejadian termal lain         : 0
+
+==========================================================================
+  4. DISK & FILE SYSTEM
+==========================================================================
+   Error disk / NTFS / volmgr : 0 kejadian
+   Bersih.
+
+==========================================================================
+  5. PAGE FILE & RUANG DISK (yang lu curigai)
+==========================================================================
+   Page file diatur otomatis oleh Windows : False
+   Page file: C:\pagefile.sys  terpakai 88 MB dari alokasi 16384 MB (puncak 88 MB)
+   Setelan: c:\pagefile.sys  awal 0 MB  maksimal 0 MB  (0 = dikelola sistem)
+
+   Drive C:  sisa 199.7 GB dari 475.4 GB  (42.0% kosong)
+
+   RAM fisik  : 15.7 GB, bebas sekarang 6.8 GB
+
+==========================================================================
+  6. FILE CRASH DUMP (bukti layar biru)
+==========================================================================
+   File dump ketemu : 5
+     2026-08-14 04:02  9.6 MB  C:\Windows\Minidump\081426-14203-01.dmp
+     2026-08-05 12:21  8.3 MB  C:\Windows\Minidump\080526-13765-01.dmp
+     2026-08-05 11:05  8.4 MB  C:\Windows\Minidump\080526-13218-01.dmp
+     2026-08-02 04:53  8.4 MB  C:\Windows\Minidump\080226-12187-01.dmp
+     2026-08-02 03:27  8.3 MB  C:\Windows\Minidump\080226-18937-01.dmp
+
+==========================================================================
+  7. VONIS
+==========================================================================
+   >> ADA LAYAR BIRU (BSOD). Penyebabnya bisa dibaca dari file dump.
+      Kode stop-nya ada di rincian di atas. Biasanya driver atau RAM.
+
+==========================================================================
+  8. GARIS WAKTU GABUNGAN (biar kelihatan polanya)
+==========================================================================
+   2026-08-14 04:02:01  MATI MENDADAK (Kernel-Power 41)
+   2026-08-13 01:47:44  restart terjadwal
+   2026-08-13 01:44:12  restart terjadwal
+   2026-08-13 01:43:21  restart terjadwal
+   2026-08-13 01:42:35  restart terjadwal
+   2026-08-06 00:38:39  restart terjadwal
+   2026-08-06 00:37:16  MATI MENDADAK (Kernel-Power 41)
+   2026-08-05 12:21:18  MATI MENDADAK (Kernel-Power 41)
+   2026-08-05 11:05:25  MATI MENDADAK (Kernel-Power 41)
+   2026-08-05 03:54:36  restart terjadwal
+   2026-08-04 21:33:09  MATI MENDADAK (Kernel-Power 41)
+   2026-08-04 17:10:38  restart terjadwal
+   2026-08-04 15:15:54  MATI MENDADAK (Kernel-Power 41)
+   2026-08-04 11:39:07  restart terjadwal
+   2026-08-03 15:06:23  MATI MENDADAK (Kernel-Power 41)
+   2026-08-02 04:53:22  MATI MENDADAK (Kernel-Power 41)
+   2026-08-02 03:27:18  MATI MENDADAK (Kernel-Power 41)
+   2026-08-02 01:16:55  MATI MENDADAK (Kernel-Power 41)
+   2026-08-02 00:16:29  MATI MENDADAK (Kernel-Power 41)
+   2026-08-01 22:38:21  MATI MENDADAK (Kernel-Power 41)
+   2026-08-01 22:20:32  MATI MENDADAK (Kernel-Power 41)
+   2026-07-31 23:21:04  MATI MENDADAK (Kernel-Power 41)
+   2026-07-31 14:30:38  restart terjadwal
+   2026-07-31 14:22:11  restart terjadwal
+   2026-07-24 11:23:53  restart terjadwal

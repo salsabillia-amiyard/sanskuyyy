@@ -1,0 +1,251 @@
+2026.08.13 13:56:55.731	Experts	expert Straddle_News_M1 (XAUUSD,M1) loaded successfully
+2026.08.13 13:57:27.485	Trades	'32218295': cancel order #172939953 buy stop 0.12 XAUUSD at 4387.54 sl: 4383.51
+2026.08.13 13:57:27.524	Trades	'32218295': accepted cancel order #172939953 buy stop 0.12 XAUUSD at 4387.54 sl: 4383.51
+2026.08.13 13:57:27.528	Trades	'32218295': cancel #172939953 buy stop 0.12 XAUUSD at 4387.54 done in 44.011 ms
+2026.08.13 13:57:32.727	Trades	'32218295': cancel order #172939956 sell stop 0.12 XAUUSD at 4381.42 sl: 4385.45
+2026.08.13 13:57:32.761	Trades	'32218295': accepted cancel order #172939956 sell stop 0.12 XAUUSD at 4381.42 sl: 4385.45
+2026.08.13 13:57:32.763	Trades	'32218295': cancel #172939956 sell stop 0.12 XAUUSD at 4381.42 done in 36.698 ms
+2026.08.13 14:30:00.181	Trades	'32218295': buy stop 2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.250	Trades	'32218295': accepted buy stop 2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.252	Trades	'32218295': order #172949794 buy stop 2 / 2 XAUUSD at 4392.65 done in 75.799 ms
+2026.08.13 14:30:00.255	Trades	'32218295': sell stop 2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.322	Trades	'32218295': accepted sell stop 2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.328	Trades	'32218295': order #172949799 sell stop 2 / 2 XAUUSD at 4386.01 done in 73.486 ms
+
+2026.08.13 13:57:22.191	Straddle_News_M1 (XAUUSD,M1)	[NM1] Straddle_News_M1 v2.42 | XAUUSD digits=2 1pip=0.01000 | event 20/137 | offset server skrg GMT+3 | jendela 240 dtk | ronde maks 3 | lot 0.27 | SL 150p | trail 200p | TP 350p | cut 250p | force=NYALA
+2026.08.13 13:57:22.191	Straddle_News_M1 (XAUUSD,M1)	[NM1] Level = PERSIS di HIGH/LOW candle M1 terakhir sebelum rilis (Buffer 0). NOL OCO - dua sisi tetap hidup.
+2026.08.13 13:57:22.191	Straddle_News_M1 (XAUUSD,M1)	[NM1] FORCE MARKET CUMA DI RONDE 1. Ronde 2+ murni pending di high/low candle - harga di luar range, EA DIEM nungguin balik.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] STOP-SETELAH-TP NYALA. Sekali ada posisi tutup kena TP, event langsung tutup buku.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] FOMC GELOMBANG 2 NYALA: +30 menit setelah statement (jumpa pers Powell). 20 event -> 20 slot. Logikanya PERSIS sama, cuma anchor-nya ikut candle M1 sebelum jam gelombang itu.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] CATATAN: HardSL 150p <= CutLoss 250p. SL broker nembak duluan, jadi aturan cut-dua-sisi praktis GAK PERNAH nyala. Kalau mau cut-nya yang kerja, lebarin HardSL (misal 500p) atau matiin (0).
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] TRAILING NYALA LANGSUNG - nol ambang mulai.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] AKIBATNYA: cut-dua-sisi 250p GAK AKAN PERNAH nyala - posisi keburu kestop di 200p, gak sempat rugi segitu.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] Temuan project lu sendiri (Straddle_News_OPT v2.10): trailing 38-146 pip
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] di tengah news yang geraknya $30+ bikin 49 dari 62 slot tutup <=5 detik,
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] median 0 detik, panen mentok 13,5%. Trail 50p ($0,50) LEBIH RAPET lagi.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] ADU LAWAN UseTrailing=false sebelum angkanya dipercaya - setelan lain
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] dibiarin SAMA PERSIS, biar yang keukur beneran cuma efek trailing.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] TP NYALA 350p, nempel di pending sejak awal. Trailing bawa TP-nya terus tiap SL digeser - dua-duanya hidup, mana yang duluan kena itu yang nutup.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] 5 slot masih di depan. Empat terdekat (JAM SERVER):
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.08.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.09.10 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.10.15 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.11.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] CEK SEKALI SEBELUM DITINGGAL: buka chart XAUUSD M1, lihat rilis
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] news terakhir. Lilin yang meledak HARUS pas di jam di atas.
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] Kalau meleset 1 jam, isi Srv_OffsetPaksa (server GMT+2 -> isi 2).
+2026.08.13 13:57:22.192	Straddle_News_M1 (XAUUSD,M1)	[NM1] Di luar jendela event, EA ini DIEM TOTAL - nol order.
+2026.08.13 14:30:00.166	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 2.00  (bebas $1847.42, margin/lot $219.63 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.166	Straddle_News_M1 (XAUUSD,M1)	[NM1] !!! LOT KENA SEKRING 2.00. Margin sanggup lebih besar - naikkan Lot_MaksMutlak kalau ini memang disengaja.
+2026.08.13 14:30:00.252	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 2.00  (bebas $1847.42, margin/lot $219.30 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.252	Straddle_News_M1 (XAUUSD,M1)	[NM1] !!! LOT KENA SEKRING 2.00. Margin sanggup lebih besar - naikkan Lot_MaksMutlak kalau ini memang disengaja.
+2026.08.13 14:30:01.519	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending BUY tiket=172949794 DIBATALKAN (bukan kena). Sisi BUY gak dipasang ulang - kalau jebakan dicabut manusia, EA gak boleh diam-diam masang lagi.
+2026.08.13 14:31:15.240	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending SELL tiket=172949799 DIBATALKAN (bukan kena). Sisi SELL gak dipasang ulang.
+
+2026.08.13 13:57:43.244	Experts	expert Straddle_News_M1 (XAUUSD,M1) loaded successfully
+2026.08.13 13:58:39.219	Trades	'32147530': cancel order #172940030 buy stop 0.01 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 13:58:39.256	Trades	'32147530': accepted cancel order #172940030 buy stop 0.01 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 13:58:39.259	Trades	'32147530': cancel #172940030 buy stop 0.01 XAUUSD at 4391.00 done in 40.117 ms
+2026.08.13 13:58:40.815	Trades	'32147530': cancel order #172940033 sell stop 0.01 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 13:58:40.852	Trades	'32147530': accepted cancel order #172940033 sell stop 0.01 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 13:58:40.853	Trades	'32147530': cancel #172940033 sell stop 0.01 XAUUSD at 4379.05 done in 38.564 ms
+2026.08.13 13:58:45.826	Trades	'32147530': cancel order #172940173 buy stop 0.01 XAUUSD at 4391.24 sl: 4387.64
+2026.08.13 13:58:45.869	Trades	'32147530': accepted cancel order #172940173 buy stop 0.01 XAUUSD at 4391.24 sl: 4387.64
+2026.08.13 13:58:45.877	Trades	'32147530': cancel #172940173 buy stop 0.01 XAUUSD at 4391.24 done in 51.180 ms
+2026.08.13 13:58:46.996	Trades	'32147530': cancel order #172940177 sell stop 0.01 XAUUSD at 4380.19 sl: 4383.79
+2026.08.13 13:58:47.034	Trades	'32147530': accepted cancel order #172940177 sell stop 0.01 XAUUSD at 4380.19 sl: 4383.79
+2026.08.13 13:58:47.047	Trades	'32147530': cancel #172940177 sell stop 0.01 XAUUSD at 4380.19 done in 50.840 ms
+2026.08.13 13:58:50.988	Trades	'32147530': cancel order #172940210 buy stop 0.01 XAUUSD at 4388.90 sl: 4384.98
+2026.08.13 13:58:51.028	Trades	'32147530': accepted cancel order #172940210 buy stop 0.01 XAUUSD at 4388.90 sl: 4384.98
+2026.08.13 13:58:51.031	Trades	'32147530': cancel #172940210 buy stop 0.01 XAUUSD at 4388.90 done in 42.786 ms
+2026.08.13 13:58:51.704	Trades	'32147530': cancel order #172940213 sell stop 0.01 XAUUSD at 4382.95 sl: 4386.87
+2026.08.13 13:58:51.750	Trades	'32147530': accepted cancel order #172940213 sell stop 0.01 XAUUSD at 4382.95 sl: 4386.87
+2026.08.13 13:58:51.751	Trades	'32147530': cancel #172940213 sell stop 0.01 XAUUSD at 4382.95 done in 47.279 ms
+2026.08.13 14:30:00.141	Trades	'32147530': buy stop 0.53 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.249	Trades	'32147530': accepted buy stop 0.53 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.252	Trades	'32147530': order #172949789 buy stop 0.53 / 0.53 XAUUSD at 4392.65 done in 112.347 ms
+2026.08.13 14:30:00.255	Trades	'32147530': sell stop 0.53 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.322	Trades	'32147530': accepted sell stop 0.53 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.327	Trades	'32147530': order #172949798 sell stop 0.53 / 0.53 XAUUSD at 4386.01 done in 72.278 ms
+
+2026.08.13 13:58:00.611	Straddle_News_M1 (XAUUSD,M1)	[NM1] Straddle_News_M1 v2.42 | XAUUSD digits=2 1pip=0.01000 | event 20/137 | offset server skrg GMT+3 | jendela 240 dtk | ronde maks 3 | lot 0.27 | SL 150p | trail 200p | TP 350p | cut 250p | force=NYALA
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] Level = PERSIS di HIGH/LOW candle M1 terakhir sebelum rilis (Buffer 0). NOL OCO - dua sisi tetap hidup.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] FORCE MARKET CUMA DI RONDE 1. Ronde 2+ murni pending di high/low candle - harga di luar range, EA DIEM nungguin balik.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] STOP-SETELAH-TP NYALA. Sekali ada posisi tutup kena TP, event langsung tutup buku.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] FOMC GELOMBANG 2 NYALA: +30 menit setelah statement (jumpa pers Powell). 20 event -> 20 slot. Logikanya PERSIS sama, cuma anchor-nya ikut candle M1 sebelum jam gelombang itu.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] CATATAN: HardSL 150p <= CutLoss 250p. SL broker nembak duluan, jadi aturan cut-dua-sisi praktis GAK PERNAH nyala. Kalau mau cut-nya yang kerja, lebarin HardSL (misal 500p) atau matiin (0).
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] TRAILING NYALA LANGSUNG - nol ambang mulai.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] AKIBATNYA: cut-dua-sisi 250p GAK AKAN PERNAH nyala - posisi keburu kestop di 200p, gak sempat rugi segitu.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] Temuan project lu sendiri (Straddle_News_OPT v2.10): trailing 38-146 pip
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] di tengah news yang geraknya $30+ bikin 49 dari 62 slot tutup <=5 detik,
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] median 0 detik, panen mentok 13,5%. Trail 50p ($0,50) LEBIH RAPET lagi.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] ADU LAWAN UseTrailing=false sebelum angkanya dipercaya - setelan lain
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] dibiarin SAMA PERSIS, biar yang keukur beneran cuma efek trailing.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] TP NYALA 350p, nempel di pending sejak awal. Trailing bawa TP-nya terus tiap SL digeser - dua-duanya hidup, mana yang duluan kena itu yang nutup.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] 5 slot masih di depan. Empat terdekat (JAM SERVER):
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.08.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.09.10 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.10.15 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.11.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] CEK SEKALI SEBELUM DITINGGAL: buka chart XAUUSD M1, lihat rilis
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] news terakhir. Lilin yang meledak HARUS pas di jam di atas.
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] Kalau meleset 1 jam, isi Srv_OffsetPaksa (server GMT+2 -> isi 2).
+2026.08.13 13:58:00.612	Straddle_News_M1 (XAUUSD,M1)	[NM1] Di luar jendela event, EA ini DIEM TOTAL - nol order.
+2026.08.13 14:30:00.084	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 0.53  (bebas $292.80, margin/lot $219.63 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.252	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 0.53  (bebas $292.80, margin/lot $219.30 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:01.521	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending BUY tiket=172949789 DIBATALKAN (bukan kena). Sisi BUY gak dipasang ulang - kalau jebakan dicabut manusia, EA gak boleh diam-diam masang lagi.
+2026.08.13 14:31:15.241	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending SELL tiket=172949798 DIBATALKAN (bukan kena). Sisi SELL gak dipasang ulang.
+
+2026.08.13 13:58:15.369	Experts	expert Straddle_News_M1 (XAUUSD,M1) loaded successfully
+2026.08.13 13:58:55.597	Trades	'32331505': cancel order #172940031 buy stop 0.07 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 13:58:55.635	Trades	'32331505': accepted cancel order #172940031 buy stop 0.07 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 13:58:55.636	Trades	'32331505': cancel #172940031 buy stop 0.07 XAUUSD at 4391.00 done in 39.577 ms
+2026.08.13 13:58:56.215	Trades	'32331505': cancel order #172940034 sell stop 0.07 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 13:58:56.253	Trades	'32331505': accepted cancel order #172940034 sell stop 0.07 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 13:58:56.254	Trades	'32331505': cancel #172940034 sell stop 0.07 XAUUSD at 4379.05 done in 40.037 ms
+2026.08.13 13:58:56.551	Trades	'32331505': cancel order #172940175 buy stop 0.07 XAUUSD at 4391.24 sl: 4387.64
+2026.08.13 13:58:56.590	Trades	'32331505': accepted cancel order #172940175 buy stop 0.07 XAUUSD at 4391.24 sl: 4387.64
+2026.08.13 13:58:56.590	Trades	'32331505': cancel #172940175 buy stop 0.07 XAUUSD at 4391.24 done in 39.368 ms
+2026.08.13 13:58:56.901	Trades	'32331505': cancel order #172940178 sell stop 0.07 XAUUSD at 4380.19 sl: 4383.79
+2026.08.13 13:58:56.954	Trades	'32331505': accepted cancel order #172940178 sell stop 0.07 XAUUSD at 4380.19 sl: 4383.79
+2026.08.13 13:58:56.961	Trades	'32331505': cancel #172940178 sell stop 0.07 XAUUSD at 4380.19 done in 60.151 ms
+2026.08.13 13:58:57.432	Trades	'32331505': cancel order #172940211 buy stop 0.1 XAUUSD at 4388.90 sl: 4384.98
+2026.08.13 13:58:57.470	Trades	'32331505': accepted cancel order #172940211 buy stop 0.1 XAUUSD at 4388.90 sl: 4384.98
+2026.08.13 13:58:57.471	Trades	'32331505': cancel #172940211 buy stop 0.1 XAUUSD at 4388.90 done in 39.335 ms
+2026.08.13 13:58:57.897	Trades	'32331505': cancel order #172940214 sell stop 0.1 XAUUSD at 4382.95 sl: 4386.87
+2026.08.13 13:58:57.937	Trades	'32331505': accepted cancel order #172940214 sell stop 0.1 XAUUSD at 4382.95 sl: 4386.87
+2026.08.13 13:58:57.938	Trades	'32331505': cancel #172940214 sell stop 0.1 XAUUSD at 4382.95 done in 40.699 ms
+2026.08.13 14:30:00.210	Trades	'32331505': buy stop 2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.321	Trades	'32331505': accepted buy stop 2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.332	Trades	'32331505': order #172949796 buy stop 2 / 2 XAUUSD at 4392.65 done in 122.793 ms
+2026.08.13 14:30:00.338	Trades	'32331505': sell stop 2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.382	Trades	'32331505': accepted sell stop 2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.399	Trades	'32331505': order #172949808 sell stop 2 / 2 XAUUSD at 4386.01 done in 63.186 ms
+
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] Straddle_News_M1 v2.42 | XAUUSD digits=2 1pip=0.01000 | event 20/137 | offset server skrg GMT+3 | jendela 240 dtk | ronde maks 3 | lot 0.27 | SL 150p | trail 200p | TP 350p | cut 250p | force=NYALA
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] Level = PERSIS di HIGH/LOW candle M1 terakhir sebelum rilis (Buffer 0). NOL OCO - dua sisi tetap hidup.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] FORCE MARKET CUMA DI RONDE 1. Ronde 2+ murni pending di high/low candle - harga di luar range, EA DIEM nungguin balik.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] STOP-SETELAH-TP NYALA. Sekali ada posisi tutup kena TP, event langsung tutup buku.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] FOMC GELOMBANG 2 NYALA: +30 menit setelah statement (jumpa pers Powell). 20 event -> 20 slot. Logikanya PERSIS sama, cuma anchor-nya ikut candle M1 sebelum jam gelombang itu.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] CATATAN: HardSL 150p <= CutLoss 250p. SL broker nembak duluan, jadi aturan cut-dua-sisi praktis GAK PERNAH nyala. Kalau mau cut-nya yang kerja, lebarin HardSL (misal 500p) atau matiin (0).
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] TRAILING NYALA LANGSUNG - nol ambang mulai.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] AKIBATNYA: cut-dua-sisi 250p GAK AKAN PERNAH nyala - posisi keburu kestop di 200p, gak sempat rugi segitu.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] Temuan project lu sendiri (Straddle_News_OPT v2.10): trailing 38-146 pip
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] di tengah news yang geraknya $30+ bikin 49 dari 62 slot tutup <=5 detik,
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] median 0 detik, panen mentok 13,5%. Trail 50p ($0,50) LEBIH RAPET lagi.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] ADU LAWAN UseTrailing=false sebelum angkanya dipercaya - setelan lain
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] dibiarin SAMA PERSIS, biar yang keukur beneran cuma efek trailing.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] TP NYALA 350p, nempel di pending sejak awal. Trailing bawa TP-nya terus tiap SL digeser - dua-duanya hidup, mana yang duluan kena itu yang nutup.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] 5 slot masih di depan. Empat terdekat (JAM SERVER):
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.08.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.09.10 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.10.15 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.11.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] CEK SEKALI SEBELUM DITINGGAL: buka chart XAUUSD M1, lihat rilis
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] news terakhir. Lilin yang meledak HARUS pas di jam di atas.
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] Kalau meleset 1 jam, isi Srv_OffsetPaksa (server GMT+2 -> isi 2).
+2026.08.13 13:58:29.468	Straddle_News_M1 (XAUUSD,M1)	[NM1] Di luar jendela event, EA ini DIEM TOTAL - nol order.
+2026.08.13 14:30:00.179	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 2.00  (bebas $1598.06, margin/lot $219.63 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.179	Straddle_News_M1 (XAUUSD,M1)	[NM1] !!! LOT KENA SEKRING 2.00. Margin sanggup lebih besar - naikkan Lot_MaksMutlak kalau ini memang disengaja.
+2026.08.13 14:30:00.332	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 2.00  (bebas $1598.06, margin/lot $219.30 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.332	Straddle_News_M1 (XAUUSD,M1)	[NM1] !!! LOT KENA SEKRING 2.00. Margin sanggup lebih besar - naikkan Lot_MaksMutlak kalau ini memang disengaja.
+2026.08.13 14:30:01.521	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending BUY tiket=172949796 DIBATALKAN (bukan kena). Sisi BUY gak dipasang ulang - kalau jebakan dicabut manusia, EA gak boleh diam-diam masang lagi.
+2026.08.13 14:31:15.241	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending SELL tiket=172949808 DIBATALKAN (bukan kena). Sisi SELL gak dipasang ulang.
+
+
+2026.08.13 14:00:05.006	Trades	'33942840': cancel order #49508411 buy stop 0.08 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 14:00:05.047	Trades	'33942840': accepted cancel order #49508411 buy stop 0.08 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 14:00:05.048	Trades	'33942840': cancel #49508411 buy stop 0.08 XAUUSD at 4391.00 done in 42.900 ms
+2026.08.13 14:00:05.181	Trades	'33942840': cancel order #49508412 sell stop 0.08 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 14:00:05.220	Trades	'33942840': accepted cancel order #49508412 sell stop 0.08 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 14:00:05.220	Trades	'33942840': cancel #49508412 sell stop 0.08 XAUUSD at 4379.05 done in 39.126 ms
+2026.08.13 14:00:05.329	Trades	'33942840': cancel order #49509912 buy stop 0.08 XAUUSD at 4392.27 sl: 4388.67
+2026.08.13 14:00:05.367	Trades	'33942840': accepted cancel order #49509912 buy stop 0.08 XAUUSD at 4392.27 sl: 4388.67
+2026.08.13 14:00:05.370	Trades	'33942840': cancel #49509912 buy stop 0.08 XAUUSD at 4392.27 done in 41.304 ms
+2026.08.13 14:00:05.631	Trades	'33942840': cancel order #49509913 sell stop 0.08 XAUUSD at 4381.21 sl: 4384.81
+2026.08.13 14:00:05.670	Trades	'33942840': accepted cancel order #49509913 sell stop 0.08 XAUUSD at 4381.21 sl: 4384.81
+2026.08.13 14:00:05.673	Trades	'33942840': cancel #49509913 sell stop 0.08 XAUUSD at 4381.21 done in 42.360 ms
+2026.08.13 14:30:00.034	Trades	'33942840': buy stop 2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.075	Trades	'33942840': accepted buy stop 2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.075	Trades	'33942840': order #49523805 buy stop 2 / 2 XAUUSD at 4392.65 done in 41.687 ms
+2026.08.13 14:30:00.080	Trades	'33942840': sell stop 2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.121	Trades	'33942840': accepted sell stop 2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.121	Trades	'33942840': order #49523807 sell stop 2 / 2 XAUUSD at 4386.01 done in 42.087 ms
+
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] Level = PERSIS di HIGH/LOW candle M1 terakhir sebelum rilis (Buffer 0). NOL OCO - dua sisi tetap hidup.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] FORCE MARKET CUMA DI RONDE 1. Ronde 2+ murni pending di high/low candle - harga di luar range, EA DIEM nungguin balik.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] STOP-SETELAH-TP NYALA. Sekali ada posisi tutup kena TP, event langsung tutup buku.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] FOMC GELOMBANG 2 NYALA: +30 menit setelah statement (jumpa pers Powell). 20 event -> 20 slot. Logikanya PERSIS sama, cuma anchor-nya ikut candle M1 sebelum jam gelombang itu.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] CATATAN: HardSL 150p <= CutLoss 250p. SL broker nembak duluan, jadi aturan cut-dua-sisi praktis GAK PERNAH nyala. Kalau mau cut-nya yang kerja, lebarin HardSL (misal 500p) atau matiin (0).
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] TRAILING NYALA LANGSUNG - nol ambang mulai.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] AKIBATNYA: cut-dua-sisi 250p GAK AKAN PERNAH nyala - posisi keburu kestop di 200p, gak sempat rugi segitu.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] Temuan project lu sendiri (Straddle_News_OPT v2.10): trailing 38-146 pip
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] di tengah news yang geraknya $30+ bikin 49 dari 62 slot tutup <=5 detik,
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] median 0 detik, panen mentok 13,5%. Trail 50p ($0,50) LEBIH RAPET lagi.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] ADU LAWAN UseTrailing=false sebelum angkanya dipercaya - setelan lain
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] dibiarin SAMA PERSIS, biar yang keukur beneran cuma efek trailing.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] TP NYALA 350p, nempel di pending sejak awal. Trailing bawa TP-nya terus tiap SL digeser - dua-duanya hidup, mana yang duluan kena itu yang nutup.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] 5 slot masih di depan. Empat terdekat (JAM SERVER):
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.08.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.09.10 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.10.15 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.11.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] CEK SEKALI SEBELUM DITINGGAL: buka chart XAUUSD M1, lihat rilis
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] news terakhir. Lilin yang meledak HARUS pas di jam di atas.
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] Kalau meleset 1 jam, isi Srv_OffsetPaksa (server GMT+2 -> isi 2).
+2026.08.13 14:00:00.517	Straddle_News_M1 (XAUUSD,M1)	[NM1] Di luar jendela event, EA ini DIEM TOTAL - nol order.
+2026.08.13 14:30:00.031	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 2.00  (bebas $1720.30, margin/lot $219.63 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.031	Straddle_News_M1 (XAUUSD,M1)	[NM1] !!! LOT KENA SEKRING 2.00. Margin sanggup lebih besar - naikkan Lot_MaksMutlak kalau ini memang disengaja.
+2026.08.13 14:30:00.076	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 2.00  (bebas $1720.30, margin/lot $219.30 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.076	Straddle_News_M1 (XAUUSD,M1)	[NM1] !!! LOT KENA SEKRING 2.00. Margin sanggup lebih besar - naikkan Lot_MaksMutlak kalau ini memang disengaja.
+2026.08.13 14:30:01.520	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending BUY tiket=49523805 DIBATALKAN (bukan kena). Sisi BUY gak dipasang ulang - kalau jebakan dicabut manusia, EA gak boleh diam-diam masang lagi.
+2026.08.13 14:31:15.235	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending SELL tiket=49523807 DIBATALKAN (bukan kena). Sisi SELL gak dipasang ulang.
+
+2026.08.13 13:59:22.860	Experts	expert Straddle_News_M1 (XAUUSD,M1) loaded successfully
+2026.08.13 13:59:35.433	Trades	'33050910': cancel order #172940029 buy stop 0.02 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 13:59:35.470	Trades	'33050910': accepted cancel order #172940029 buy stop 0.02 XAUUSD at 4391.00 sl: 4384.62
+2026.08.13 13:59:35.473	Trades	'33050910': cancel #172940029 buy stop 0.02 XAUUSD at 4391.00 done in 40.266 ms
+2026.08.13 13:59:35.783	Trades	'33050910': cancel order #172940032 sell stop 0.02 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 13:59:35.820	Trades	'33050910': accepted cancel order #172940032 sell stop 0.02 XAUUSD at 4379.05 sl: 4385.43
+2026.08.13 13:59:35.821	Trades	'33050910': cancel #172940032 sell stop 0.02 XAUUSD at 4379.05 done in 38.990 ms
+2026.08.13 13:59:36.107	Trades	'33050910': cancel order #172940717 buy stop 0.02 XAUUSD at 4390.27 sl: 4386.35
+2026.08.13 13:59:36.150	Trades	'33050910': accepted cancel order #172940717 buy stop 0.02 XAUUSD at 4390.27 sl: 4386.35
+2026.08.13 13:59:36.150	Trades	'33050910': cancel #172940717 buy stop 0.02 XAUUSD at 4390.27 done in 42.323 ms
+2026.08.13 13:59:36.477	Trades	'33050910': cancel order #172940719 sell stop 0.02 XAUUSD at 4384.32 sl: 4388.24
+2026.08.13 13:59:36.516	Trades	'33050910': accepted cancel order #172940719 sell stop 0.02 XAUUSD at 4384.32 sl: 4388.24
+2026.08.13 13:59:36.516	Trades	'33050910': cancel #172940719 sell stop 0.02 XAUUSD at 4384.32 done in 39.376 ms
+2026.08.13 14:30:00.124	Trades	'33050910': buy stop 0.2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.164	Trades	'33050910': accepted buy stop 0.2 XAUUSD at 4392.65 sl: 4391.15 tp: 4396.15
+2026.08.13 14:30:00.167	Trades	'33050910': order #172949786 buy stop 0.2 / 0.2 XAUUSD at 4392.65 done in 43.921 ms
+2026.08.13 14:30:00.169	Trades	'33050910': sell stop 0.2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.206	Trades	'33050910': accepted sell stop 0.2 XAUUSD at 4386.01 sl: 4387.51 tp: 4382.51
+2026.08.13 14:30:00.208	Trades	'33050910': order #172949791 sell stop 0.2 / 0.2 XAUUSD at 4386.01 done in 39.577 ms
+
+2026.08.13 13:59:32.264	Straddle_News_M1 (XAUUSD,M1)	[NM1] Straddle_News_M1 v2.42 | XAUUSD digits=2 1pip=0.01000 | event 20/137 | offset server skrg GMT+3 | jendela 240 dtk | ronde maks 3 | lot 0.27 | SL 150p | trail 200p | TP 350p | cut 250p | force=NYALA
+2026.08.13 13:59:32.264	Straddle_News_M1 (XAUUSD,M1)	[NM1] Level = PERSIS di HIGH/LOW candle M1 terakhir sebelum rilis (Buffer 0). NOL OCO - dua sisi tetap hidup.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] FORCE MARKET CUMA DI RONDE 1. Ronde 2+ murni pending di high/low candle - harga di luar range, EA DIEM nungguin balik.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] STOP-SETELAH-TP NYALA. Sekali ada posisi tutup kena TP, event langsung tutup buku.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] FOMC GELOMBANG 2 NYALA: +30 menit setelah statement (jumpa pers Powell). 20 event -> 20 slot. Logikanya PERSIS sama, cuma anchor-nya ikut candle M1 sebelum jam gelombang itu.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] CATATAN: HardSL 150p <= CutLoss 250p. SL broker nembak duluan, jadi aturan cut-dua-sisi praktis GAK PERNAH nyala. Kalau mau cut-nya yang kerja, lebarin HardSL (misal 500p) atau matiin (0).
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] TRAILING NYALA LANGSUNG - nol ambang mulai.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] AKIBATNYA: cut-dua-sisi 250p GAK AKAN PERNAH nyala - posisi keburu kestop di 200p, gak sempat rugi segitu.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] Temuan project lu sendiri (Straddle_News_OPT v2.10): trailing 38-146 pip
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] di tengah news yang geraknya $30+ bikin 49 dari 62 slot tutup <=5 detik,
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] median 0 detik, panen mentok 13,5%. Trail 50p ($0,50) LEBIH RAPET lagi.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] ADU LAWAN UseTrailing=false sebelum angkanya dipercaya - setelan lain
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] dibiarin SAMA PERSIS, biar yang keukur beneran cuma efek trailing.
+2026.08.13 13:59:32.265	Straddle_News_M1 (XAUUSD,M1)	[NM1] TP NYALA 350p, nempel di pending sejak awal. Trailing bawa TP-nya terus tiap SL digeser - dua-duanya hidup, mana yang duluan kena itu yang nutup.
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1] 5 slot masih di depan. Empat terdekat (JAM SERVER):
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.08.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.09.10 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.10.15 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1]   ?    gel-1 (rilis)       2026.11.13 15:30   -> order dipasang PERSIS di detik itu
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1] CEK SEKALI SEBELUM DITINGGAL: buka chart XAUUSD M1, lihat rilis
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1] news terakhir. Lilin yang meledak HARUS pas di jam di atas.
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1] Kalau meleset 1 jam, isi Srv_OffsetPaksa (server GMT+2 -> isi 2).
+2026.08.13 13:59:32.266	Straddle_News_M1 (XAUUSD,M1)	[NM1] Di luar jendela event, EA ini DIEM TOTAL - nol order.
+2026.08.13 14:30:00.122	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 0.20  (bebas $448.28, margin/lot $878.53 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:00.167	Straddle_News_M1 (XAUUSD,M1)	[NM1] LOT AUTO = 0.20  (bebas $448.28, margin/lot $877.20 x2 sisi, jatah 80%, sekring 2.00)
+2026.08.13 14:30:01.471	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending BUY tiket=172949786 DIBATALKAN (bukan kena). Sisi BUY gak dipasang ulang - kalau jebakan dicabut manusia, EA gak boleh diam-diam masang lagi.
+2026.08.13 14:31:15.271	Straddle_News_M1 (XAUUSD,M1)	[NM1] pending SELL tiket=172949791 DIBATALKAN (bukan kena). Sisi SELL gak dipasang ulang.
+
